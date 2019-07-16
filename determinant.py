@@ -1,7 +1,6 @@
 #This can handle any size matrix
-#Learned painful, painful lessons on the 'del' function of python
-#Surprisingly, I was able to conceptualize and think about the recursive
-#ideas easily. Thanks to my linear algebra class!
+
+#Thanks to Dr. Jeffery Slye & my linear algebra class!
 
 
 def determinant(m1):
