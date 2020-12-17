@@ -1,6 +1,6 @@
-<h1> LinearAlgebra </h1>
+<h1> NumericalComputation </h1>
 
-LinearAlgebra is a Python package for scientific computing
+NumericalComputation is a Python package for scientific computing
 
 It provides:
 * Computational functions for common linear algebra problems
