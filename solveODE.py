@@ -51,3 +51,6 @@ def RRK4(f,x0,t0,h):
     x1 = x0 + gam*(h/6)*(k1+2*k2+2*k3+k4)
     t = t0 + gam*h
     return t, x1    
+
+def euler(f, x0, t0, h):
+    return x0 + h * f(t0, x0)
