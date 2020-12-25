@@ -15,3 +15,4 @@ It will soon include:
 * New algorithms from accepted research papers
 * Custom errors
 * More efficient code for already existing functions
+* Better organization
