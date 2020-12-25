@@ -54,3 +54,6 @@ def RRK4(f,x0,t0,h):
 
 def euler(f, x0, t0, h):
     return x0 + h * f(t0, x0)
+
+def midpoint(f, x0, t0, h):
+    return x0 + h*f(t0+0.5*h, x0 + 0.5*h*f(t0, x0))
