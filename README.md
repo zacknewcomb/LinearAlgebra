@@ -12,7 +12,7 @@ Current Features:
 * A single linearAlgebra module that holds all functions related to linear algebra
 
 *Next Update Will Include*:
-Changes to help remove the dependency on NumPy
+* Changes to help remove the dependency on NumPy
 
 Future features:
 * Support for additional common linear aglebra problems
