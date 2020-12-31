@@ -1,3 +1,5 @@
+import numpy as np
+
 def gamma(s, a, b, f, tn, delta_t, y, k):
     # Define c from the matrix A
     c = [sum(a[i]) for i in range(len(a))]
