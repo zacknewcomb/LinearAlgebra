@@ -7,10 +7,12 @@ Current Features:
 * Computational functions for solving ODEs
 * Computational functions for finding roots of real-valued functions
 * Special functions from recent research papers in numerical analysis
-* Support for M x N matricies and N x 1 vectors
+
+*Previous Update Included*:
+* A single linearAlgebra module that holds all functions related to linear algebra
 
 *Next Update Will Include*:
-* A single LinearAlgebra module that holds all functions related to linear algebra
+Changes to help remove the dependency on NumPy
 
 Future features:
 * Support for additional common linear aglebra problems
@@ -19,4 +21,3 @@ Future features:
 * New algorithms from accepted research papers
 * More Custom errors
 * More efficient code for already existing functions
-* Better organization
