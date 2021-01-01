@@ -8,11 +8,12 @@ Current Features:
 * Computational functions for finding roots of real-valued functions
 * Special functions from recent research papers in numerical analysis
 
-*Previous Update Included*:
-* A single linearAlgebra module that holds all functions related to linear algebra
+*Previous Updates Included (1/1/2021)*:
+* Added Newton's Method to Roots Module
 
-*Next Update Will Include*:
+*Next Updates Will Include*:
 * Changes to help remove the dependency on NumPy
+* Cleaner, more consistent code and commenting in linearAlgebra module
 
 Future features:
 * Support for additional common linear aglebra problems
