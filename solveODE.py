@@ -34,7 +34,7 @@ def RK4(f,x0,t0,h):
     k4 = f(t0 + h, x0 + h*k3)
     x1 = x0 + (h/6)*(k1+2*k2+2*k3+k4)
     return t0+h, x1
-    
+
 def RRK4(f,x0,t0,h):
     s = 4
     b = np.array([1/6, 1/3, 1/3, 1/6])
@@ -55,7 +55,14 @@ def RRK4(f,x0,t0,h):
     return t, x1    
 
 def euler(f, x0, t0, h):
-    return x0 + h * f(t0, x0)
+    x1 =  x0 + h * f(t0, x0)
+    return t0+h, x1
 
 def midpoint(f, x0, t0, h):
-    return x0 + h*f(t0+0.5*h, x0 + 0.5*h*f(t0, x0))
+    x1 = x0 + h*f(t0+0.5*h, x0 + 0.5*h*f(t0, x0))
+    return t0+h, x1
+
+def heun(f, x0, t0, h):
+    intermediateValue = x0 + h*f(t0, x0)
+    x1 = x0 + (h/2) * (f(t0,x0) + f(t0+h, intermediateValue))
+    return t0+h, x1
