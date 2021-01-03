@@ -1,6 +1,9 @@
 import math
 
 def crossProduct(v1,v2):
+    if len(v1) != 3 or len(v2) != 3:
+        raise Exception("Both vectors must be of length 3 to compute the Dot Product")
+    
     i = (v2[2]*v1[1])-(v2[1]*v1[2])
     j = -1* ((v2[2]*v1[0])-(v2[0]*v1[2]))
     k = (v2[1]*v1[0])-(v2[0]*v1[1])
@@ -8,6 +11,9 @@ def crossProduct(v1,v2):
     return ([i, j, k])
 
 def determinant(m1):
+    if len(m1) != len(m1[0]):
+        raise Exception("The determinant of a matrix can only be computed when the matrix is square")
+    
     if len(m1) == 1:
         return (m1[0][0])
     if len(m1) == 2:
@@ -47,6 +53,9 @@ def distanceBetween(A, B):
     return total
 
 def dotProduct(v1,v2):
+    if len(v1) != len(v2):
+        raise Exception("Vectors must be the same length")
+    
     result = 0
     for i in range(len(v1)):
         result += v1[i]*v2[i]
@@ -85,6 +94,9 @@ def kroneckerProduct(A,B):
     return C
 
 def multiplyMatrices(m1, m2):
+    if len(m1) != len(m2[0]):
+        raise Exception("Dimensions of matrices do not align. First matrix is " + str(len(m1)) + "x" + str(len(m1[0])) + ". Second matrix is " + str(len(m2)) + "x" + str(len(m2[0])) )   
+    
     result_matrix =[]
     result_rows = len(m1)
     result_cols = len(m2[0])
@@ -99,7 +111,7 @@ def multiplyMatrices(m1, m2):
            
     return result_matrix
 
-def normalize(vector):
+def norm(vector):
     total = 0
     for i in vector:
         total += i*i
@@ -184,3 +196,8 @@ def transpose(matrix):
         row = []
     
     return newMatrix
+
+def leastSquares(A, b):
+    Atranspose = transpose(A)
+    x = multiplyMatrices(Atranspose, b)
+    return x
