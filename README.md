@@ -6,9 +6,14 @@ Current Features:
 * Computational functions for common linear algebra problems
 * Computational functions for solving ODEs
 * Computational functions for finding roots of real-valued functions
+* Computational functions for integrating single-dimension functions numerically
 * Special functions from recent research papers in numerical analysis
 
 *Previous Updates Included*:
+* (1/5/2021)
+  * Created integration module with numerical integration methods
+    * Trapezoid method
+    * Midpoint method
 * (1/3/2021) 
   * Added Heun Method to solveODE module
   * Added Least Squares Solution method to linearAlgebra module
