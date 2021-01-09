@@ -10,6 +10,11 @@ Current Features:
 * Special functions from recent research papers in numerical analysis
 
 *Previous Updates Included*:
+* (1/8-9/2021)
+  * Restructre the package
+  * Create the OneDimAnalysis module and divide the solve module seperately
+    * Add the stability and fixedPoint methods, for finding qualitative info on ODEs
+  * Improve Secant and Newton method in roots module
 * (1/5/2021)
   * Created integration module with numerical integration methods
     * Trapezoid method
@@ -19,8 +24,6 @@ Current Features:
   * Added Least Squares Solution method to linearAlgebra module
   * Added custom error messages to linearAlgebra module
   * Modified all solveODE methods to return both the step value and the function value after the step performed by method
-* (1/1/2021) 
-  * Added Newton's Method to Roots Module
 
 *Next Updates Will Include*:
 * Changes to help remove the dependency on NumPy
