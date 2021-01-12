@@ -10,6 +10,8 @@ Current Features:
 * Special functions from recent research papers in numerical analysis
 
 *Previous Updates Included*:
+* (1/11/2021)
+  * Add linearStability to OneDimAnalysis module
 * (1/8-9/2021)
   * Restructre the package
   * Create the OneDimAnalysis module and divide the solve module seperately
