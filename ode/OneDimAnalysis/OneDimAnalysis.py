@@ -1,4 +1,5 @@
 import roots
+import integration
 
 def stability(fixedPoint, f, ep=10**-8):
     accuracy = 10**-8
@@ -67,5 +68,16 @@ def fixedPoint(phasePoint, f):
             raise Exception("No fixed point found, phase point possibly trending to infintiy")
         
         return fixedPoint
+
+def linearStability(fixedpt, f):
+    ep = 10**-4
+    derivative = f((fixedpt + ep) - f(fixedpt)) / ep
+    if derivative < 0:
+        return "stable"
+    elif derivative > 0:
+        return "unstable"
+    else:
+        return "Derivative is 0, need to perform other analysis to determine stability"
+    
             
     
