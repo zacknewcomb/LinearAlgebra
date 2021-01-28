@@ -7,7 +7,7 @@ Current Features:
 * Computational functions for solving ODEs
 * Computational functions for finding roots of real-valued functions
 * Computational functions for integrating single-dimension functions numerically
-* Special functions from recent research papers in numerical analysis
+* Computational functions from research papers in numerical analysis
 
 *Previous Updates Included*:
 * (1/11/2021)
@@ -26,15 +26,3 @@ Current Features:
   * Added Least Squares Solution method to linearAlgebra module
   * Added custom error messages to linearAlgebra module
   * Modified all solveODE methods to return both the step value and the function value after the step performed by method
-
-*Next Updates Will Include*:
-* Changes to help remove the dependency on NumPy
-* Cleaner, more consistent code in linearAlgebra module
-
-Future features:
-* Support for additional common linear aglebra problems
-* More ODE related computations
-* Fourier Transform Computations
-* New algorithms from accepted research papers
-* More Custom errors
-* More efficient code for already existing functions
