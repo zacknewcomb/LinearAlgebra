@@ -10,6 +10,11 @@ Current Features:
 * Computational functions from research papers in numerical analysis
 
 *Previous Updates Included*:
+* (6/5/2021)
+  * Add kalmanfilter class, used for tracking in radar along with other uses
+    * Very basic update of the kalman filter. Future updates will have a better defined kalman filter.
+    * Would like to add extended kalman filter and a possibly an a priori and a posteriori
+    * Would also like to add time update equations and measurement update equations
 * (1/11/2021)
   * Add linearStability to OneDimAnalysis module
 * (1/8-9/2021)
